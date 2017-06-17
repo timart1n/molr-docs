@@ -1,5 +1,5 @@
-# molr-docs
-First draft of documentation
+# Concepts and Vision
+The purpose of this document is mainly to lay out a common vision and
 
-![Molr Overview](molr-overview.PNG)
-Format: ![Alt Text](url)
+![Molr Overview](molr-overview.PNG =100x)
+
