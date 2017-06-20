@@ -41,3 +41,6 @@ A mission is the piece which contains the actual logic to execute. E.g. for a ja
 ### Molar GUI
 This should allow the user to step through a certain mission.
 (probably also - for debugging - functionalities like listing the available missions and running a selected mission could be useful. However, for a production client it might be more often the case that a client asks for running a fixed (hardcoded) mission, and just needs the gui in the case the user wants to explicitely step through it)
+
+### Deployment system (plugin)
+There has to be a way from a build system to deploy new (versions) of moles. This could either be achieved through the agency itself (which then itself could use some well established deployment strategy/technology (e.g. docker images)), could be done through the back door through some other technology itself. tbd.
