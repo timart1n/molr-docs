@@ -2,7 +2,7 @@
 The purpose of this document is mainly to lay out a common vision and concepts which are implemented (or shall be implemented) in the molr project.
 
 ## The Name
-The name *molr* was a result of discussion where we found that a good name for some part of our big system which would execute pieces of functionality would be an "Agent". However, we also found that this term was already too much overloaded. Further we thought that our at-that-time agents would work very often in the dark and unnoticed... and since as the reader of any good action thrillers knows: Such agents are called **moles** (although usually with a negative association, while our moles are of course good guys ;-).
+The name *molr* was a result of discussion where we found that a good name for some part of our big system which would execute pieces of functionality would be an "Agent". However, we also found that this term was already too much overloaded. Further we thought that our at-that-time agents would work very often in the dark and unnoticed... and since as the reader of any good action thrillers knows: Such agents are called **moles** (although usually with a negative association, while our moles are of course good guys ;-). Those moles usually execute **missions** and they get their instructions by **agencies**.
 So to conclude: this project is all about small moles, it provides of modularity (it is mo(du)l(a)r) and *molar* also associates a bit with molecules working together - which could be another way how to see the thing ;-) ... Making a long thing short: *molr* is what came out ;-)
 
 ## Purpose
