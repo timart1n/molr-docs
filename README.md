@@ -21,6 +21,17 @@ The following picture shows an overview of an example system using molr:
 (This is a proposed name, I think we did not call anything like this yet). The Agency is the central place which controls all the actions and tells its associated moles what to do. Usually, the agency is embedded in a server. A user can interact with the agency through a GUI to control the moles and their missions.
 
 ### Mole
-The mole is the entry point of each independably deployable unit, which is able to execute a certain set of missions. Each mole has to have (at least) two modes of  Mole implementations might have two dimensions of specializations: supported programming language, and some type of mission he is able to execute. For example, we could imagine moles like:
-* 
+The mole is the entry point of each independably deployable unit, which is able to execute a certain set of missions. Each mole has to have (at least) two modes of execution:
+* **run** a mission,
+* and **step through** a mission.
+On deployment (=startup?) time, the mole has to report the missions he is prepared to execute to the agency, so that the agency can run/step them. Each mole also might need some way to find out what missions he has available in its deployment unit (e.g. scan the classpath, or just have it hardcoded somehow)
+
+Mole implementations might have two dimensions of specializations: The supported programming language, and some type of mission he is able to execute. For example, we could imagine moles like:
+* JavaRunnableMole: I could simply have a certain set of java runnables available, which he can execute on request. (The mission name could e.g. simply the classname)
+* JavaJunitMole: It could hava set of java junit classes which it can execute on request. Here probably a notion of submissions (or the other way around: A MissionSet) could be interesting, because sometimes it might be useful to execute a full Junit test class, some other times only a test method.
+* PythonCallableMole: Could have available a set of callables which it can execute on request.
+* PythonPyunitMole: ... similar to JavaJunitMole
+* ...
+
+It should be possible to write the moles itself in different languages. Therefore a communication protocol between agencies and moles have to be chosen which has bindings to a variety of languages.
 
