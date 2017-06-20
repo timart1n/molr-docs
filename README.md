@@ -15,3 +15,12 @@ Molr shall make it simple to create modular systems, where it has to be possible
 The following picture shows an overview of an example system using molr:
 ![Molr Overview](molr-overview.PNG)
 
+## Components and Responsibilities
+
+### Agency
+(This is a proposed name, I think we did not call anything like this yet). The Agency is the central place which controls all the actions and tells its associated moles what to do. Usually, the agency is embedded in a server. A user can interact with the agency through a GUI to control the moles and their missions.
+
+### Mole
+The mole is the entry point of each independably deployable unit, which is able to execute a certain set of missions. Each mole has to have (at least) two modes of  Mole implementations might have two dimensions of specializations: supported programming language, and some type of mission he is able to execute. For example, we could imagine moles like:
+* 
+
