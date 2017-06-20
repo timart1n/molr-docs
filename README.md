@@ -33,5 +33,11 @@ Mole implementations might have two dimensions of specializations: The supported
 * PythonPyunitMole: ... similar to JavaJunitMole
 * ...
 
-It should be possible to write the moles itself in different languages. Therefore a communication protocol between agencies and moles have to be chosen which has bindings to a variety of languages.
+It might be usefult to have the possibility to write the moles itself in different languages. Therefore a communication protocol between agencies and moles have to be chosen which has bindings to a variety of languages.
 
+### Mission
+A mission is the piece which contains the actual logic to execute. E.g. for a java mole this should be plain java code that could be run (or stepped through). The mole has to have the possibility to observe the state of the mission and finally get a result from it (e.g. IN_PROGRESS, FAILED, SUCCESSFUL, ERROR).
+
+### Molar GUI
+This should allow the user to step through a certain mission.
+(probably also - for debugging - functionalities like listing the available missions and running a selected mission could be useful. However, for a production client it might be more often the case that a client asks for running a fixed (hardcoded) mission, and just needs the gui in the case the user wants to explicitely step through it)
